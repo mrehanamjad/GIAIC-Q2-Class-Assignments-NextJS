@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import React, { FormEvent, useState } from "react";
 
-function page() {
+function Page() {
   const [val, setVal] = useState("");
   const router = useRouter();
 
@@ -32,4 +32,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;

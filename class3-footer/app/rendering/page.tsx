@@ -27,7 +27,7 @@ function page() {
         <p className="text-md mt-3">
           Static Generation pre-renders the page at build time, meaning that the
           HTML is generated once and reused on every request. This is ideal for
-          pages that don't change frequently.
+          pages that don&apos;t change frequently.
         </p>
         <h3 className="text-xl md:text-2xl font-bold text-green-700">
           Example:

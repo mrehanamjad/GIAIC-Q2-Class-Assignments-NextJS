@@ -12,7 +12,7 @@ function Card({
 }) {
   return (
     <Link href={link}>
-    <div className="border p-2 cursor-pointer hover:bg-slate-950 hover:border-green-500 space-y-6 rounded-lg shadow-2xl">
+    <div className="border p-2 cursor-pointer hover:bg-slate-950 space-y-6 rounded-lg shadow-2xl">
       <h1>
         {" "}
         <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">

@@ -12,7 +12,7 @@ function Header() {
             <Link href={'/rendering'} className='py-2 px-4 rounded  hover:bg-slate-800 max-md:bg-slate-800'>Rendering</Link>
             <Link href={'/dynamic-routes'} className='py-2 px-4 rounded  hover:bg-slate-800 max-md:bg-slate-800'>Dynamic Routes</Link>
         </ul>
-            <Link href={'/class4-assignment'} className='py-2 px-4 rounded max-sm:w-full text-center hover:bg-red-600 bg-red-800 max-md:bg-red-600'>Class 4 Assignment</Link>
+            <Link href={'/class4-assignment'} className='py-2 px-4 rounded max-sm:w-full text-center hover:bg-red-600 bg-red-800 max-md:bg-red-600'>Class 5 - Assignment</Link>
     </header>
   )
 }

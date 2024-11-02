@@ -1,5 +1,5 @@
-import Container from '@/components/Container';
 import React from 'react';
+import Container from '@/components/Container';
 import CarDetails from '@/data/CarDetails.json';
 import Image from 'next/image';
 import Button from '@/components/Button';
@@ -23,13 +23,7 @@ interface CarI {
   price: string;
 }
 
-interface PageProps {
-  params: {
-    cardetail: string;
-  };
-}
-
-function Page({ params }: PageProps) {
+function Page({ params }: { params: { cardetail: string } }) {
   const carDetail: string = params.cardetail;
   const car: CarI = CarDetails[carDetail as keyof typeof CarDetails];
 

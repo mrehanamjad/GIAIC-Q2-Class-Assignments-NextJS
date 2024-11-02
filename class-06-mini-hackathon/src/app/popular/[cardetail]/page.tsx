@@ -3,7 +3,7 @@ import React from 'react'
 import CarDetails from '@/data/CarDetails.json';
 import Image from 'next/image';
 import Button from '@/components/Button';
-
+import Link from 'next/link';
 interface VahicalI  {
   number_of_doors: number;
   engine: string;
@@ -27,11 +27,11 @@ function Page({params}:{params: {cardetail: string}}) {
   const carDetail:string = params.cardetail;
   const car: CarI = CarDetails[carDetail as keyof typeof CarDetails];
   return (
-    <div className='bg-slate-300 text-gray-900 py-8'>
+    <div className='bg-gray-200 text-gray-900 py-8'>
             <Container>
               <div className='w-full max-w-4xl mx-auto text-center flex flex-col gap-10 justify-center items-center'>
                 <h1 className='text-4xl font-bold underline'>{car.title}  Price in Pakistan, Images, Reviews & Specs</h1>
-                <Image src={car.imageSrc} alt={car.title} height={1000} width={1000} className='h-56 w-80' />
+                <Image src={car.imageSrc} alt={car.title} height={1000} width={1000} className='h-56 w-80 rounded' />
                 <div className='flex gap-2'>
                 <Button variant='darkBlue' >Book a Test Drive</Button>
                 <Button variant='white' >Request Bank Finance</Button>
@@ -52,7 +52,9 @@ function Page({params}:{params: {cardetail: string}}) {
                   </div>
                 </div>
                 <p className='text-2xl text-green-600'>{car.price}</p>
+                <Link href='/checkout'>
                 <Button variant='darkBlue' >Make Payment</Button>
+                </Link>
               </div>
             </Container>
     </div>

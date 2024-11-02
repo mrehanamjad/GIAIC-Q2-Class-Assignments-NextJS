@@ -23,7 +23,7 @@ interface CarI {
   price: string;
 }
 
-function Page({ params }: { params: { cardetail: string } }) {
+function Page({ params }:any) {
   const carDetail: string = params.cardetail;
   const car: CarI = CarDetails[carDetail as keyof typeof CarDetails];
 

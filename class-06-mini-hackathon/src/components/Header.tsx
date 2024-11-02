@@ -1,6 +1,5 @@
 import React from "react";
 import { FaMobileAlt } from "react-icons/fa";
-import Container from "./Container";
 import Logo from "./Logo";
 import Link from "next/link";
 import { MdArrowDropDown } from "react-icons/md";

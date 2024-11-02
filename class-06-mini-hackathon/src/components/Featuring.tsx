@@ -12,10 +12,10 @@ function Featuring() {
     {
       title: "Toyota Carola 119",
       price: "PKR 59.7 - 75.5 lacs",
-      imageSrc:
-        "https://cache1.pakwheels.com/system/car_generation_pictures/5361/medium/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg?1606903674",
+      imageSrc: "https://cache1.pakwheels.com/system/car_generation_pictures/5361/medium/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg?1606903674",
       reviews: 622,
       isStarRating: true,
+      pageLink:'/popular/toyotaCorolla'
     },
     {
       title: "Suzuki Alto",
@@ -23,22 +23,23 @@ function Featuring() {
       imageSrc: "https://cache4.pakwheels.com/system/car_generation_pictures/6013/medium/Suzuki_Alto_-_PNG.png?1635945100",
       reviews: 199,
       isStarRating: true,
+      pageLink:'/popular/suzukiAlto'
     },
     {
       title: "Hyunda City",
       price: "PKR 46.5 - 58.5 lacs",
-      imageSrc:
-        "https://cache1.pakwheels.com/system/car_generation_pictures/6425/medium/Honda_City_Front.jpg?1651424945",
+      imageSrc: "https://cache1.pakwheels.com/system/car_generation_pictures/6425/medium/Honda_City_Front.jpg?1651424945",
       reviews: 456,
       isStarRating: true,
+      pageLink:'/popular/hyundaCity'
     },
     {
       title: "Honda Civic",
       price: "PKR 86.6 - 99.0 lacs",
-      imageSrc:
-        "https://cache4.pakwheels.com/system/car_generation_pictures/7370/medium/Cover.jpg?1677570254",
+      imageSrc: "https://cache4.pakwheels.com/system/car_generation_pictures/7370/medium/Cover.jpg?1677570254",
       reviews: 359,
       isStarRating: true,
+      pageLink:'/popular/hondaCivic'
     },
   ];
 
@@ -143,7 +144,7 @@ function Featuring() {
           <FaAngleLeft className="-mr-5 z-30 bg-white p-2 text-4xl text-gray-400 shadow-md shadow-gray-500 rounded-full cursor-pointer hover:bg-[#518ecb] hover:text-white" />
         <div className="px-2 py-6 flex  gap-4">
           {active == 1 && popularCars.map((car) => (
-            <CarCard key={car.title} {...car} />
+            <Link href={car.pageLink} key={car.title}> <CarCard {...car} /> </Link>
           ))}
         {active == 2 && upcomingCars.map((car) => (
             <CarCard key={car.title} {...car} />

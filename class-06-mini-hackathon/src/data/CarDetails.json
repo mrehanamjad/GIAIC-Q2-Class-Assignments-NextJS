@@ -1,0 +1,65 @@
+{
+    "toyotaCorolla" : {
+        "title": "Toyota Corolla",
+        "imageSrc": "https://cache1.pakwheels.com/system/car_generation_pictures/5361/medium/Corolla-X-Cars-Cropped-Pictures-for-Website.jpg?1606903674",
+        "vehicle_description": {
+          "number_of_doors": 4,
+          "engine": "1800 CC",
+          "condition": "8.5 / 10",
+          "driven": "9,500 KM",
+          "suspension_type": "Soft Suspension",
+          "avg_fuel_consumption": "13 Km per ltr",
+          "transmission": "Automatic",
+          "fuel_type": "High Octane"
+        },
+        "price": "PKR 50,00,000"
+      },
+
+      "suzukiAlto": {
+        "title": "Suzuki Alto",
+        "imageSrc": "https://cache3.pakwheels.com/system/car_generation_pictures/7747/medium/Sealion_Phev.png?1723031680",
+        "vehicle_description": {
+          "number_of_doors": 4,
+          "engine": "660 CC",
+          "condition": "8.0 / 10",
+          "driven": "15,000 KM",
+          "suspension_type": "Standard Suspension",
+          "avg_fuel_consumption": "20 Km per ltr",
+          "transmission": "Automatic",
+          "fuel_type": "Petrol"
+        },
+        "price": "PKR 15,00,000"
+      },
+      "hyundaCity": {
+        "title": "Hyunda City",
+        "imageSrc": "https://cache1.pakwheels.com/system/car_generation_pictures/6425/medium/Honda_City_Front.jpg?1651424945",
+        "vehicle_description": {
+          "number_of_doors": 4,
+          "engine": "1500 CC",
+          "condition": "9.0 / 10",
+          "driven": "10,000 KM",
+          "suspension_type": "Comfort Suspension",
+          "avg_fuel_consumption": "18 Km per ltr",
+          "transmission": "Automatic",
+          "fuel_type": "Petrol"
+        },
+        "price": "PKR 30,00,000"
+      },
+      "hondaCivic": {
+        "title": "Honda Civic",
+        "imageSrc": "https://cache4.pakwheels.com/system/car_generation_pictures/7370/medium/Cover.jpg?1677570254",
+        "vehicle_description": {
+          "number_of_doors": 4,
+          "engine": "1800 CC",
+          "condition": "9.2 / 10",
+          "driven": "8,000 KM",
+          "suspension_type": "Advanced Suspension",
+          "avg_fuel_consumption": "14 Km per ltr",
+          "transmission": "Automatic",
+          "fuel_type": "Petrol"
+        },
+        "price": "PKR 40,00,000"
+      }
+      
+      
+}

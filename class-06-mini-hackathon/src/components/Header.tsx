@@ -32,7 +32,7 @@ function Header() {
           </ul>
         </div>
         <div className="flex flex-col lg:flex-row max-md:flex-row max-md:items-center max-md:px-2  lg:items-center justify-between  text-white">
-          <Logo />
+         <Link href={'/'} ><Logo /></Link>
           <ul className="flex flex-wrap max-md:hidden">
             {navItems.map((navItem) => (
               <li key={navItem.title} className="text-white px-2">

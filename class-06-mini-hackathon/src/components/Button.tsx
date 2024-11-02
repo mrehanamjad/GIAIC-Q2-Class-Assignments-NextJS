@@ -3,7 +3,7 @@ import React, { ButtonHTMLAttributes, ReactNode } from 'react';
 type ButtonProps = {
     children: ReactNode;
     type?: 'button' | 'submit' | 'reset';
-    variant?: 'blue' | 'red' ;
+    variant?: 'blue' | 'red' | 'darkBlue'|'white';
     className?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
@@ -15,7 +15,7 @@ function Button({
     ...props
 }: ButtonProps) {
     return (
-        <button type={type} className={`px-4 py-2 rounded text-white ${className} ${variant == 'blue' ? 'bg-[#518ecb]' : 'bg-[#b73439]'}`} {...props}>
+        <button type={type} className={`px-4 py-2 rounded  ${className} ${variant == 'blue' && 'bg-[#518ecb] text-white'} ${variant == 'darkBlue' && 'bg-[#1e40af] text-white'} ${variant == 'red' && 'bg-[#b73439] text-white'} ${variant == 'white' && 'bg-white '} `} {...props}>
             {children}
         </button>
     );

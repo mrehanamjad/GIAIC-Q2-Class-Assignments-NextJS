@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     domains: [
       "wsa1.pakwheels.com",
@@ -10,6 +9,8 @@ const nextConfig: NextConfig = {
       "cache4.pakwheels.com",
     ],
   },
-};
-
-export default nextConfig;
+  };
+  
+  export default nextConfig;
+  
+  

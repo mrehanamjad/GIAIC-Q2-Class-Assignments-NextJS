@@ -1,4 +1,1 @@
-Class 3  Assignment: 
-Practice the concepts you've learned in class through hands-on exercises.
-Create a footer and render it once so that it's available across all routes.
-
+## - [Live Class 6 Mini Hackathon](https://giaic-class-6-mini-hackathon.vercel.app/)

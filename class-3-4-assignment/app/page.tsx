@@ -24,13 +24,13 @@ export default function Home() {
           link="/"
         />
         <Card
-          classNo="4"
+          classNo="5"
           listItems={[
             "Practice the concepts you've learned in class through hands-on exercises.",
             "Create a section containing Three cards of equal widths in a row.",
             "Create a section containing two cards of equal widths in a row."
           ]}
-          link="/class4-assignment"
+          link="/class5-assignment"
         />
       </main>
     </div>
